@@ -1,10 +1,28 @@
-# mobileLocationViz
-这个仓库主要是用来开发手机端的程序，用来跟踪机器人的位姿和轨迹
+JSON格式示例：
+Accelaration,加速度
+IR，八个红外测距
 
-## 参考资料
-### 1. 开发
-官方的开发文档：https://developer.android.com/develop/connectivity/bluetooth/connect-bluetooth-devices?hl=zh-cn
-一个开发程序的文档：https://blog.csdn.net/weiybin/article/details/130443405
 
-## android程序的文件架构
+{
+    "Accelaration": { 
+        "acc_x":accelerationData[0],  // int
+        "acc_y":accelerationData[1],
+        "acc_z":accelerationData[2]
+    },
 
+    "IR":{
+        "IR0":irData[0],              // int
+        "IR1":irData[1],
+        "IR2":irData[2],
+        "IR3":irData[3],
+        "IR4":irData[4],
+        "IR5":irData[5],
+        "IR6":irData[6],
+        "IR7":irData[7]
+    }
+
+    //其他JSON包待补充
+}
+
+UWB数据类型：
+//待补充
